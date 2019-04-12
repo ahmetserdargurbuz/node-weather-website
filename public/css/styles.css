@@ -1,0 +1,23 @@
+h1 {
+    color: #888888;
+    font-size: 60px;
+}
+
+img {
+    margin: 30px;
+    width: 250px;
+    transform: rotate(270deg);
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}
