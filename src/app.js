@@ -38,12 +38,13 @@ app.get('/weather', (req, res) => {
                 res.send({error})
             }
             else {
+                const address = data.address
                 weather (data.latitude, data.longitude, (error, data) => {
                     if (error){
                         res.send({error})
                     }
                     else {
-                        data.address = req.query.address
+                        data.address = address
                         console.log(data)
                         res.send(data)
                     }

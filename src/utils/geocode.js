@@ -12,10 +12,12 @@ const geocode = (address, callback) => {
             callback('Unable to find location. Try another search.', undefined)
         }
         else {
+            console.log(response.body.features[0])
             callback(undefined, {
                 latitude: response.body.features[0].center[1],
                 longitude: response.body.features[0].center[0],
-                name: response.body.features[0].place_name
+                name: response.body.features[0].place_name,
+                address: response.body.features[0].place_name
             })
         }
     })
