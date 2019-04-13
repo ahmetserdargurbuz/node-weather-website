@@ -27,7 +27,7 @@ const fetchWeatherData = (address) => {
             }
             else {
                 console.log(data)
-                messageOne.textContent = 'Current temperature is ' + data.temperature + ' and it is ' + data.summary + '. Preciption probability %' + data.precipProbability
+                messageOne.textContent = 'Found location: ' + data.address + ' Current temperature is ' + data.temperature + ' and it is ' + data.summary + '. Preciption probability %' + data.precipProbability
             }
         })
     })
